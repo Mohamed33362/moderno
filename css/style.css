@@ -1,0 +1,457 @@
+/**************************************************************************************
+********************************** start variable ************************************/
+
+:root{
+    --primarycolor:#fa694e;
+    --secondrycolor:#a2a2a2;
+    --bgcolor: #333333;
+    --bgcolor2:#fbfbfb;
+    --padding:5%;
+    --fontfamily: 'lora'
+}
+
+/*************************************************************************************
+*********************************** end variable ************************************/
+
+
+/************************************************************************************
+********************************* start global rules *******************************/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'monst' ;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+    src: url(../fonts2/Lora-Regular.ttf);
+    font-family: 'lora ';
+}
+
+body{
+    font-family: 'monst';
+}
+
+ul{
+    list-style: none;
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    min-width: 200px;
+    border: 2px solid var(--primarycolor);
+}
+
+@media (max-width: 575.98px){
+    header .conatner img{
+        width: 30% !important;
+    }
+    
+    .one .contaner2 h1{
+        font-size: 60px !important;
+    }
+
+    .one .contaner2 p{
+        font-size: 13px !important;
+    }
+
+    .three .conatner4 .box{
+        display: block !important;
+        text-align: center !important;
+    }
+
+    .three .conatner4 .box img{
+        width: 100% !important;
+        padding-bottom: 10px;
+    }
+
+    .three .conatner4 .box .text2 button{
+        margin-bottom: 20px !important;
+    }
+
+    .four .contaner5 button{
+        padding-left: 31% !important;
+        padding-right: 32% !important;
+    }
+
+    .four .contaner5 .text3 .text4{
+        align-self: center !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .four .contaner5 .text3 .for p{
+        width: 100% !important;
+    }
+
+    .four .contaner5 .text3{
+        width: 100% !important;
+        text-align: center;
+    }
+
+
+}
+
+/***************************************************************************************
+************************************** end global rules ********************************/
+
+/*************************************************************************************** 
+*****************************************start header *********************************/
+
+    header{
+        width: 100%;
+        padding-left:var(--padding);
+        padding-right:var(--padding);
+        position: absolute;
+        z-index: 2;
+    }
+
+    header .conatner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .conatner img{
+        width: 20%;
+    }
+
+    header .conatner .icon i {
+        color: white;
+    }
+
+    header .conatner nav{
+        position: relative;
+    }
+
+    header .conatner nav ul li{
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    header .conatner nav ul li a{
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: 0.3s;
+        letter-spacing: 1px;
+        font-size: 18px;
+        color: white;
+    }
+
+        header .conatner nav ul li a:hover{
+        color: var(--primarycolor);
+        border-bottom: 2px solid lightgray;
+    }
+    header .conatner nav .icon:hover + ul{
+        display: block;
+    }
+
+    header .conatner nav ul{
+        display: none;
+    }
+
+    header .conatner nav ul:hover{
+        display: block;
+    }
+
+/*************************************************************************************** 
+*****************************************end header *********************************/
+
+
+/*************************************************************************************** 
+*****************************************start section1 *********************************/
+
+.one{
+    background: url("../images/indoors-ge86852590_19202.jpg") top no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.one .contaner2{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    width: 100%;
+}
+
+.one .contaner2 h1 {
+    font-size: 75px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+
+}
+
+.one .contaner2 p{
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-family: 'lora';
+}
+
+.one .contaner2 button{
+    border: none;
+    background: none;
+    background-color: var(--primarycolor);
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+/*************************************************************************************** 
+*****************************************end section1 *********************************/
+
+
+/************************************************************************************
+********************************* start section2 **************************************/
+
+.two{
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: center;
+}
+.two .contaner3{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+.two .contaner3 .cards i{
+    font-size: 40px;
+    padding-bottom: 25px;
+    margin-top: 18px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 92px;
+    border: 2px solid #d1d1d1;
+    color: var(--primarycolor);
+}
+
+.two .contaner3 .cards i:hover{
+    background-color: var(--primarycolor);
+    color: white;
+    border: none;
+    padding-bottom: 27px;
+    padding-top: 27px;
+    padding-right: 27px;
+    padding-left: 27px;
+}
+
+.two .contaner3 .cards h3{
+    padding-top: 30px;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.two .contaner3 .cards P{
+    font-size: 20px;
+    color: var(--secondrycolor);
+    font-family: 'lora';
+}
+
+/************************************************************************************
+********************************* end section2 *****************************************/
+
+
+/************************************************************************************
+********************************* start section3 *****************************************/
+
+.three{
+    width: 100%;
+    /* text-align: center; */
+    padding: 10%;
+    padding-top: 5%;
+    background-color: var(--bgcolor2);
+}
+
+.three .conatner4 .text{
+    text-align: center;
+}
+
+.three .conatner4 .text h4{
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.three .conatner4 .text p{
+    padding-bottom: 60px;
+    font-family: 'lora';
+    color: var(--secondrycolor);
+}
+.three .conatner4 .box{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border: 2px solid ;
+
+}
+
+.three .conatner4 .box img{
+    width: 50%;
+}
+.three .conatner4 .box .text2{
+    padding-left: 20px;
+}
+.three .conatner4 .box .text2 h4{
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.three .conatner4 .box .text2 p{
+    font-size: 15px;
+}
+.three .conatner4 .box .text2 button{
+    border: none;
+    background: none;
+    background-color: var(--primarycolor);
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-transform: capitalize;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.three  .conatner4 .box2 .card-img{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 40px;
+    padding-top: 50px;
+}
+
+.three  .conatner4 .box2 .card-img img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/************************************************************************************
+********************************* end section3 *****************************************/
+
+
+/************************************************************************************
+********************************* START section4 *****************************************/
+
+.four{
+    width: 100%;
+    text-align: center;
+    padding: var(--padding);
+}
+
+.four .contaner5 h4{
+    text-transform: capitalize;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.four .contaner5 p{
+    font-family: 'lora';
+    font-size: 15px;
+    color: var(--secondrycolor);
+    padding-bottom: 40px;
+}
+
+.four .contaner5 iframe{
+    width: 80%;
+    height: 300px;
+    padding-bottom: 40px;
+}
+
+
+.four .contaner5 form input{
+    padding: 20px;
+    background-color: #f1f4f7;
+    border: none;
+    font-size: 15px;
+    font-family: 'lora';
+}
+
+.four .contaner5 form .on1e{
+    width: 40%;
+}
+.four .contaner5 form .tw2o{
+    margin-bottom: 20px;
+    width: 40%;
+
+}
+
+.four .contaner5 form .thr3ee{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.four .contaner5 form textarea{
+    min-width: 80%;
+    max-width: 80%;
+    max-height: 200px;
+    min-height: 200px;
+    border: none;
+    background-color: #f1f4f7;
+    font-family: 'lora';
+    padding-left: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.four .contaner5 button{
+    padding: 10px;
+    padding-left: 38%;
+    padding-right: 38%;
+    border: none;
+    background-color: var(--primarycolor);
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+
+.four .contaner5 .text3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    
+}
+
+.four .contaner5 .text3 .text4{
+    align-self: baseline;
+    text-align: initial;
+    width: 50%;
+    border: 10px solid transparent;
+    background-color:#01011c;
+    color: white;
+}
+
+.four .contaner5 .text3 .for p{
+    width: 50%;
+}
+
+/************************************************************************************
+********************************* end section4 *****************************************/
